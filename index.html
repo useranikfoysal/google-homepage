@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section>
+       <header>
+           <ul>
+               <li><a href="#">Gmail</a></li>
+               <li><a href="#">Images</a></li>
+               <li><a href="#"><img src="menu.png" alt="" style="height: 50px;"></a></li>
+               <li><button>Sing in</button></li>
+           </ul>
+       </header>
+
+       <div class="main">
+           <img src="google.png" alt="google" style="height: 300px;">
+           <div class="searchbox">
+                <input type="text" class="search">
+                <div class="icons">
+                    <div><img src="search.png" alt="" style="height: 30px;"></div>
+                    <div><img src="microphone.png" alt="" style="height: 30px;"></div>
+                </div>
+           </div>
+           <div class="buttons">
+               <button class="btn">Google Search</button>
+               <button class="btn">I" Felling Lucky</button>
+               <div class="lang">
+                    Google Offered <a href="#">বাংলা</a>
+               </div>
+           </div>
+        </div>
+
+        <div class="footer">
+            <div class="row">
+                <ul class="li1">
+                    <li><a href="#">Advertisign</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="li2">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+       
+    </section>
+
+
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+        
+       section{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+       }
+
+       section header{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+
+       }
+
+       section header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       section header ul li{
+        list-style: none;
+        margin-left: 20px;
+       }
+
+       section header ul li a{
+        color: black;
+        text-decoration: none; 
+        font-size: 15px;
+       }
+
+       section header ul li button{
+        background-color: skyblue;
+        border: none;
+        outline: none;
+        padding: 8px 14px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold; border-radius: 3px;
+        cursor: pointer;
+       }
+
+       section .main{
+
+        width: 580px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       section .main .searchbox{
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        margin-top: -100px;
+       }
+
+       section .main .searchbox .search{
+        width: 100%;
+        padding: 13px;
+        padding-left: 45px;
+        padding-right: 60px;
+        border-radius: 30px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 16px;
+        margin-top: 20px;
+       }
+
+       section .main .searchbox .icons{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        padding: 12px 20px;
+        justify-content: space-between;
+        pointer-events: none;
+        margin-top: 20px;
+        top: 0px;
+       }
+
+       section .main .buttons{
+        margin-top: 20px;
+       }
+
+       section .main .buttons .btn{
+        font-size: 16px;
+        margin: 5px;
+        padding: 12px 20px;
+        margin-top: -10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 1px solid #eee;
+        outline: none;
+       }
+
+       section .main .buttons .btn:hover{
+        border-radius: 1px solid#ccc;
+       }
+      
+       section .main .lang{
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 80px;
+        margin-top: -1px;
+       }
+
+       
+       section .footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: white;
+
+       }
+
+       .row{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #eee;
+       }
+
+       .li1{
+        display: flex;
+        justify-content:space-between;
+        
+        
+       }
+
+       .li2{
+        display: flex;
+        justify-content:space-between;
+        
+       }
+
+       .li1 li{
+        list-style: none;
+        
+       }
+
+       .li1 li a{
+        color: black;
+        margin: 25px;
+       }
+
+
+       .li2 li{
+        list-style: none;
+    }
+
+    .li2 li a{
+        color: black;
+        margin: 25px;
+    }
+
+    </style>
+</body>
+</html>
